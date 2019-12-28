@@ -269,6 +269,13 @@ config BATTERY_BQ27XXX_DT_UPDATES_NVM
 	  general-purpose kernels, as this can cause misconfiguration of a
 	  smart battery with embedded NVM/flash.
 
+config BATTERY_CW2015
+	bool "CW2015 Battery driver"
+	depends on I2C
+	help
+	  If you say yes here you will get support for the battery of CW2015.
+	  This driver can give support for CW2015 Battery Interface.
+
 config BATTERY_DA9030
 	tristate "DA9030 battery driver"
 	depends on PMIC_DA903X
